@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Basic CRUD Application</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #ede7ec;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 800px;
+            margin: 40px auto;
+            background: #1a1b1a;
+            padding: 50px 60px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #f3f9ff;
+        }
+
+        form {
+            margin-bottom: 30px;
+        }
+
+        input, textarea, button {
+            width: 75%;
+            padding: 10px;
+            margin: 7px 0;
+            border-radius: 2px;
+            border: 1px solid #138f70;
+        }
+
+        textarea {
+            resize: none;
+            height: 100px;
+        }
+
+        button {
+            background: #1abc9c;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background: #16a085;
+        }
+
+        .post {
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        .post h3 {
+            margin: 0;
+            color: #eff4f9;
+        }
+
+        .post p {
+            color: #555;
+        }
+
+        .actions {
+            margin-top: 10px;
+        }
+
+        .actions a {
+            text-decoration: none;
+            color: white;
+            background: #3498db;
+            padding: 5px 10px;
+            border-radius: 4px;
+            margin-right: 5px;
+            font-size: 14px;
+        }
+
+        .actions a.delete {
+            background: #e74c3c;
+        }
+
+        .auth {
+            display: flex;
+            gap: 20px;
+        }
+
+        .auth div {
+            width: 50%;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>Basic CRUD Application</h1>
+
+    <!-- Login & Register -->
+    <div class="auth">
+        <div>
+            <h2>Login</h2>
+            <form>
+                <br>
+                <input type="text" placeholder="Username"><br><br>
+                <input type="password" placeholder="Password"><br>
+                <button>Login</button>
+            </form>
+        </div>
+
+        <div>
+            <h2>Register</h2>
+            <form>
+                <br>
+                <input type="text" placeholder="Username"><br><br>
+                <input type="password" placeholder="Password"><br>
+                <button>Register</button>
+            </form>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Create Post -->
+    <h2>Create Post</h2>
+    <form>
+        <input type="text" placeholder="Post Title">
+        <textarea placeholder="Post Content"></textarea>
+        <button>Add Post</button>
+    </form>
+
+    <!-- Read Posts -->
+    <h2>Posts</h2>
+
+    <div class="post">
+        <h3>Sample Post Title</h3>
+        <p>This is sample post content for CRUD application.</p>
+        <div class="actions">
+            <a href="#">Edit</a>
+            <a href="#" class="delete">Delete</a>
+        </div>
+    </div>
+
+    <div class="post">
+        <h3>Another Post</h3>
+        <p>Second example post content goes here.</p>
+        <div class="actions">
+            <a href="#">Edit</a>
+            <a href="#" class="delete">Delete</a>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
